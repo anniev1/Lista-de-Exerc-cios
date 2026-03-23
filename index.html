@@ -1,0 +1,40 @@
+><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista um Javascript</title>
+</head>
+<body>
+
+ <!--
+    Desenvolva um algoritmo que permita ao usuário informar quantos números
+desejar.
+O programa deve continuar solicitando números até que o usuário decida
+parar.
+Ao final, o algoritmo deve mostrar:
+A soma total dos números informados.
+-->
+
+<p> Tela para rodar JS </p>
+<button onclick="somaNumeros()"> Ex 01 </button>
+
+<script>
+function somaNumeros() {
+    let soma = 0;
+    let continuar = true;
+
+    while (continuar) {
+        let numero = parseFloat(prompt("Informe um número (ou 0 para parar):"));
+        if (numero === 0) {
+            continuar = false;
+        } else {
+            soma += numero;
+        }
+    }
+
+    alert("A soma total dos números informados é: " + soma);
+}
+
+</script>
+</body>
+</html>
