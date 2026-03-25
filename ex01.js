@@ -1,11 +1,11 @@
-function somaNumeros() {
+function soma() {
     let soma = 0;
     let continuar = true;
     while (continuar) {
         let numero = parseFloat(prompt("Digite um número (ou 'sair' para encerrar):"));
         
         if (isNaN(numero)) {
-          //soma= soma + numero
+
           console.log(soma);
         } else {
             alert(" Por favor, digite um numero válido!"); 
